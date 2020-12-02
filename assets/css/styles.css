@@ -1,0 +1,103 @@
+/* ==============    Helpers     ==================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #171C32;
+}
+
+.padding-80 {
+	padding: 100px;
+}
+
+.p-relative{
+	position: relative;
+}
+
+.color-blue {
+	color: #4c84ff;
+}
+
+/* =================     Home profile styles     ================ */
+
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: auto;
+}
+
+.home {
+	align-items: center;
+}
+
+.home-cont-img {
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	background-color: #252C48;
+	overflow: hidden;
+}
+
+.home-cont-img::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 200%;
+	background-color: #4c84ff;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	transform: rotate(-33deg);
+}
+
+.home-img {
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.home-info {
+	padding: 40px;
+}
+
+.home-hello {
+	display: inline-block;
+	font-weight: 600;
+	font-size: .9rem;
+	background-color: #4c84ff;
+	padding: 7px 10px;
+	margin-bottom: 10px;	
+}
+
+.home-hello::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-right: 7px solid #4c84ff;
+	position: absolute;
+	bottom: -7px;	
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.home-my-name {
+	font-size: 2.25rem;
+	margin: 10px 0;
+}
+
+.span-lateral-bar{
+	font-size: 1.45rem;
+}
+
+.home-text {
+	margin-top: 20px;
+	line-height: 2rem;
+}
