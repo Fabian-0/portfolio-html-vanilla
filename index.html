@@ -3,24 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="stylesheet" href="./assets/css/home-styles.css">
+	<link rel="stylesheet" href="./assets/css/nav-styles.css">
 	<link rel="stylesheet" href="./assets/css/grid.css">
+	<link rel="stylesheet" href="./assets/css/about.css">
 	<script src="https://kit.fontawesome.com/3f81f9b1b7.js" crossorigin="anonymous"></script>
 	<title>Fabián Juárez</title>
 </head>
 <body>
-	<div class="container">
-		<!-- ======================   Nav menu, in the end  ========================================-->
-		<nav class="nav-container">
-			<ul class="nav-list">
-				<li class="nav-item"><a href="#home" target="_self" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="" class="nav-link">About</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Resume</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Blog</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Contac</a></li>
-			</ul>
-		</nav>
+	<div class="container p-relative">
+		<!-- ======================   Nav menu  ========================================-->
+		<div class="nav-container">
+			<nav class="nav-menu" id="hide">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="#home" target="_self" class="nav-link link-selected">Home</a></li>
+					<li class="nav-item"><a href="" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Resume</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="" class="nav-link">Contac</a></li>
+				</ul>
+			</nav>
+			<div class="nav-toggle-icon" id="toggleId">
+				<span class="nav-toggle-styles nav-before-after closed" id="toggle-id"></span>
+				<span class="nav-toggle-styles nav-open"></span>
+				<span class="nav-toggle-styles nav-open-inverse"></span>
+			</div>
+		</div>
 		<!-- ======================   Home section  ========================================-->
 
 		<section class="home row padding-responsive" id="home">
@@ -42,8 +51,12 @@
 				</div>	
 			</div>
 		</section>
+		<section class="about">
+
+		</section>
 
 	</div>
 	<script src="./assets/js/letter_animation.js"></script>
+	<script src="./assets/js/nav_animation.js"></script>
 </body>
 </html>

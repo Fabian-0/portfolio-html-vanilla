@@ -24,14 +24,14 @@ body {
 	padding: 10%;
 }
 
-@keyframes gradient-animation {
-	0% {
-		width: 100%;
-	}
-	25% {
-		width: 0%;
-	}
+.link-selected {
+	color: #4c84ff;
 }
+
+.hidden {
+	display: none;
+}
+
 
 /* =================     Home profile styles     ================ */
 
