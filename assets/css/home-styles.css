@@ -16,6 +16,11 @@ body {
 	position: relative;
 }
 
+.generic-section {
+	padding: 10%;
+	background-color: #171C32;
+}
+
 .color-blue {
 	color: #4c84ff;
 }
@@ -30,8 +35,21 @@ body {
 
 .hidden {
 	display: none;
+}	
+
+.section-active {
+	position: relative;
+	transform: translateX(0%);
+	transition: all 500ms;
+	z-index: 400;
 }
 
+.section-disactivate {
+	position: absolute;
+	transform: translateX(100%);
+	top: 0;
+	transition: all 500ms 510ms;
+}
 
 /* =================     Home profile styles     ================ */
 
@@ -39,9 +57,10 @@ body {
 	width: 100%;
 	max-width: 1600px;
 	margin: auto;
+	overflow: hidden	;
 }
 
-.home {
+.home-class {
 	align-items: center;
 }
 
@@ -172,7 +191,7 @@ body {
 }
 
 @media (max-width: 565px) {
-	.padding-responsive {
+	.generic-section {
 		padding: 10% 5%;
 	}
 }

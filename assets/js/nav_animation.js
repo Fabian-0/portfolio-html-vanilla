@@ -7,6 +7,9 @@ function classToggle(){
 	let getSpans = document.getElementsByClassName('nav-toggle-styles');
 	let showNav = document.getElementById('hide');
 	let navLinks = document.getElementsByClassName('nav-link');
+	let linkToggleClass;
+	// let sectionInit = true;
+	let sectionVisibleArea;
 
 	navClicked.addEventListener('click', (e)=>{
 
@@ -20,13 +23,35 @@ function classToggle(){
 	for(let i = 0; i < navLinks.length; i++){
 		navLinks[i].addEventListener('click', (e)=>{
 
-			for(let o = 0; o < navLinks.length; o++){
-
-				navLinks[o].classList.remove('link-selected');
-
+			let linkId = navLinks[i].textContent.toLowerCase();
+			let sectionId = document.getElementById(linkId);
+			if(sectionVisibleArea == undefined && linkId == 'home') {
+				sectionVisibleArea = 'home';
+				console.log(sectionVisibleArea);
+			}else if (sectionVisibleArea == undefined && linkId != 'home') {
+				sectionId.classList.replace('section-disactivate','section-active');
+				document.getElementById('home').classList.replace('section-active','section-disactivate');
+				sectionVisibleArea = linkId;
+				console.log(sectionVisibleArea);
+			}
+			if(sectionVisibleArea != linkId) {
+				sectionId.classList.replace('section-disactivate','section-active');
+				document.getElementById(sectionVisibleArea).classList.replace('section-active','section-disactivate');
+				sectionVisibleArea = linkId;
+				console.log('are a');
 			}
 
-			navLinks[i].classList.toggle('link-selected');
+
+			if(linkToggleClass != undefined){
+				linkToggleClass.classList.remove('link-selected');
+			}
+
+			if(linkToggleClass == undefined){
+				navLinks[0].classList.remove('link-selected');
+			}
+
+			navLinks[i].classList.add('link-selected');
+			linkToggleClass = navLinks[i];
 			e.preventDefault();
 
 		});
