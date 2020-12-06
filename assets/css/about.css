@@ -66,7 +66,7 @@
 	padding: 25px;
 }
 
-.about-testimonial-cont-img-texts > h4 , p {
+.about-testimonial-cont-img-texts > h4 + p {
 	padding-top: 10px;
 }
 
@@ -90,6 +90,8 @@
 	color: #ffcc00;
 	font-size: 0.85rem;
 }
+
+/* =================    Rresponsive     ========================= */
 
 @media (max-width: 777px) {
 	.about-cont-info {

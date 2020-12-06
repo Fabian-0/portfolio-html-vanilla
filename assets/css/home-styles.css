@@ -8,16 +8,91 @@
 	font-family: sans-serif;
 }
 
-.xl-title {
+/* =================    progres bar     ========================= */
+
+@keyframes progres-bar-animation{
+	from {
+		background-position-x: 160px;
+	}
+	to {
+		background-position-x: 0px;
+	}
+}
+
+.progres-bar{
+	width: 100%;
+	height: 15px;
+	background-size: 40px 40px;
+	margin: 10px 0;
+	background-color: #4c84ff;
+	background-image: linear-gradient(55deg, rgba(255, 255, 255, .15) 10%, transparent 10%,transparent 20%,rgba(255, 255, 255, .15) 20%, rgba(255, 255, 255, .15) 30%, transparent 30%, transparent 40%,rgba(255, 255, 255, .15) 40%, rgba(255, 255, 255, .15) 50%, transparent 50%, transparent 60%,rgba(255, 255, 255, .15) 60%, rgba(255, 255, 255, .15) 70%, transparent 70%,transparent 80%,rgba(255, 255, 255, .15) 80%, rgba(255, 255, 255, .15) 90%, transparent 90%, transparent 100%);
+	animation: progres-bar-animation 10s linear infinite;
+}
+
+/* ===================         Button styles              ================== */
+
+.button-animated {
+	position: relative;
+	display: inline-block;
+	padding: 5px 30px;
+	background-color: #171C32;
+	border: 1px solid #4c84ff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button-animated::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #4c84ff;
+	border-radius: 5px;
+	z-index: 200;
+}
+
+.button-animated::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #3b5998;
+	border-radius: 5px;
+	z-index: 100;
+}
+
+.button-animated:hover:before{
+	width: 0%;
+	transition: width 600ms;
+}
+
+.button-animated:hover:after{
+	width: 0%;
+	transition: width 400ms 200ms;
+}
+
+.title-xl {
+	width: 100%;
 	font-size: 2.5rem;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 20px;	
 }
 
 .subtitle-md {
 	font-size: 1.2rem;
 	font-weight: normal;
 	margin-bottom: 20px;
+}
+
+.subtitle-lg {
+	font-size: 1.4rem;
+	font-weight: normal;
 }
 
 .text-standar {
@@ -176,55 +251,12 @@ body {
 	font-size: 1.2rem;
 }
 
-/* ===================         Button styles              ================== */
-
-.home-link {
-	padding: 5px 30px;
-	background-color: #171C32;
-	border: 1px solid #4c84ff;
-	border-radius: 5px;
-	margin-top: 20px;
-	cursor: pointer;
-}
-
-.home-link::before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #4c84ff;
-	border-radius: 5px;
-	z-index: 200;
-}
-
-.home-link::after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #3b5998;
-	border-radius: 5px;
-	z-index: 100;
-}
-
 .home-icon-portfolio {
 	z-index: 300;
 }
 
-.home-link:hover:before{
-	width: 0%;
-	transition: width 600ms;
-}
-
-.home-link:hover:after{
-	width: 0%;
-	transition: width 400ms 200ms;
+.home-link {
+	margin-top: 20px;
 }
 
 /* ===================          Media    Queries           ====================== */
