@@ -1,0 +1,98 @@
+/* =================    ABOUT ME section     ========================= */
+
+.about-cont-info {
+	padding: 30px;
+	margin-bottom: 100px;
+}
+
+.about-texts-info {
+	margin-bottom: 20px;
+}
+
+.about-achievement {
+	margin-bottom: 20px;
+}
+
+.about-icon {
+	font-size: 2rem;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: rgba(66, 133, 244, 0.1);
+	margin: 10px;
+	margin-top: 0;
+}
+
+.about-number {
+	position: relative;
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.about-number-sup {
+	position: absolute;
+	top: 5%;
+	font-size: 1.25rem;
+}
+
+/* =================    WHAT I DO     ========================= */
+
+.about-cont-cards {
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+.about-padd-card {
+	margin: 15px;
+	padding: 25px;
+}
+
+.about-card {
+	text-decoration: none;
+}
+
+.about-skill-icon > i {
+	padding: 20px;
+	font-size: 3rem;
+	color: #4c84ff;
+}
+
+/* =================    MY TESTIMONIAL     ========================= */
+
+.about-testimonial-cont-card {
+	padding: 15px;
+}
+
+.about-testimonial-card {
+	padding: 25px;
+}
+
+.about-testimonial-cont-img-texts > h4 , p {
+	padding-top: 10px;
+}
+
+.about-testimonial-cont-img {
+	width: 80px;
+	height: 80px;
+	float: left;
+	padding-right: 10px;
+}
+
+.about-testimonial-card > p {
+	clear: both;
+}
+
+.about-testimonial-img {
+	width: 100%;
+	border-radius: 50px;
+}
+
+.about-testimonial-stars > i{
+	color: #ffcc00;
+	font-size: 0.85rem;
+}
+
+@media (max-width: 777px) {
+	.about-cont-info {
+		text-align: center;
+	}
+}

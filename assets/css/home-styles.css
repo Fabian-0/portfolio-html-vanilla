@@ -8,6 +8,35 @@
 	font-family: sans-serif;
 }
 
+.xl-title {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.subtitle-md {
+	font-size: 1.2rem;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.text-standar {
+	line-height: 25px;
+}
+
+.default-bcolor-bradius {
+	border-radius: 10px;
+	background-color: #252C48;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-inline-block {
+	display: inline-block;
+}
+
 body {
 	background-color: #171C32;
 }
@@ -25,8 +54,21 @@ body {
 	color: #4c84ff;
 }
 
+.color-blue-secundary {
+	color: #94A2C7;
+}
+
+.small-title {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.small-text {
+	font-size: 0.75rem;
+}
+
 .padding-responsive {
-	padding: 10%;
+	padding: 8%;
 }
 
 .link-selected {
@@ -68,9 +110,6 @@ body {
 
 .home-cont-img {
 	padding: 30px;
-	background-color: #fff;
-	border-radius: 10px;
-	background-color: #252C48;
 	overflow: hidden;
 }
 
@@ -99,7 +138,6 @@ body {
 }
 
 .home-hello {
-	display: inline-block;
 	font-weight: 600;
 	font-size: .9rem;
 	background-color: #4c84ff;
@@ -141,7 +179,6 @@ body {
 /* ===================         Button styles              ================== */
 
 .home-link {
-	display: inline-block;
 	padding: 5px 30px;
 	background-color: #171C32;
 	border: 1px solid #4c84ff;
@@ -189,6 +226,8 @@ body {
 	width: 0%;
 	transition: width 400ms 200ms;
 }
+
+/* ===================          Media    Queries           ====================== */
 
 @media (max-width: 565px) {
 	.generic-section {

@@ -8,7 +8,6 @@ function classToggle(){
 	let showNav = document.getElementById('hide');
 	let navLinks = document.getElementsByClassName('nav-link');
 	let linkToggleClass;
-	// let sectionInit = true;
 	let sectionVisibleArea;
 
 	navClicked.addEventListener('click', (e)=>{
