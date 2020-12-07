@@ -1,0 +1,43 @@
+.portfolio-cont-card {
+	padding: 15px;
+}
+
+.portfolio-card {
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+}
+
+.portfolio-img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.portfolio-card-transition {
+	position: absolute;
+	top: 6.5%;
+	left: 5%;
+	width: 90%;
+	height: 85%;
+	background-color: #252c48b2;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+	transform: scale(0);
+	transition: all 400ms;
+}
+
+.portfolio-card:hover .portfolio-card-transition{
+	transform: scale(1);
+}
+
+.portfolio-card-transition > h4 {
+	width: 100%;
+}
+
+.portfolio-transition-text {
+	color: #7188e0;
+}

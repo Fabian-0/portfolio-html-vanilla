@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./assets/css/grid.css">
 	<link rel="stylesheet" href="./assets/css/about.css">
 	<link rel="stylesheet" href="./assets/css/resume.css">
+	<link rel="stylesheet" href="./assets/css/portfolio.css">
 	<link rel="stylesheet" href="./assets/css/blog.css">
 	<link rel="stylesheet" href="./assets/css/contact.css">
 	<script src="https://kit.fontawesome.com/3f81f9b1b7.js" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
 		<!-- ======================   Nav menu  ========================================-->
 
 		<div class="nav-container">
-			<nav class="nav-menu" id="hide">
+			<nav class="nav-menu hidden" id="hide">
 				<ul class="nav-list">
 					<li class="nav-item d-inline-block"><a href="#home" target="_self" class="nav-link link-selected">Home</a></li>
 					<li class="nav-item d-inline-block"><a href="#about" class="nav-link">About</a></li>
@@ -30,9 +31,9 @@
 				</ul>
 			</nav>
 			<div class="nav-toggle-icon" id="toggleId">
-				<span class="nav-toggle-styles nav-before-after closed" id="toggle-id"></span>
-				<span class="nav-toggle-styles nav-open"></span>
-				<span class="nav-toggle-styles nav-open-inverse"></span>
+				<span class="nav-toggle-styles nav-before-after" id="toggle-id"></span>
+				<span class="nav-toggle-styles"></span>
+				<span class="nav-toggle-styles"></span>
 			</div>
 		</div>
 
@@ -53,7 +54,7 @@
 					<p class="home-experience">
 						Experience in HTML, CSS, JS, PHP and MySQL; 
 						Currently studying fullstack web development at Academlo</p>
-					<p class="home-link d-inline-block button-animated"><span class="home-icon-portfolio p-relative"><i class="fas fa-briefcase"></i> &#160 PORTFOLIO</span></p>
+					<p class="home-link d-inline-block button-animated" id="button-portfolio"><span class="home-icon-portfolio p-relative"><i class="fas fa-briefcase"></i> &#160 PORTFOLIO</span></p>
 				</div>	
 			</div>
 		</section>
@@ -411,7 +412,88 @@
 		<!-- ======================   Portfolio section  ========================================-->
 
 		<section class="portfolio-class generic-section padding-responsive row section-disactivate" id="portfolio">
-			
+			<h2 class="title-xl">MY <span class="color-blue">PORTFOLIO</span></h2>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1496843916299-590492c751f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1516919549054-e08258825f80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1474625342403-1b8a2c0f7215?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvbG9yZnVsfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1492827016231-736013acccc0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvbG9yZnVsfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1474625121024-7595bfbc57ac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1486955535268-e5c3bd81aeb1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1554908081-267299e53de8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1489069313310-63735a4f3010?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8Y29sb3JmdWwlMjBmb29kfGVufDB8MHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="portfolio-card">
+					<img src="https://images.unsplash.com/photo-1585879304131-665d6cf7ee21?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="colorful image" class="portfolio-img">
+					<div class="portfolio-card-transition">
+						<h4 class="small-title">PROJECT TITLE</h4>
+						<p class="portfolio-transition-text">Marketing</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- ======================   Blog section  ========================================-->
