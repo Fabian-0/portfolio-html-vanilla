@@ -203,6 +203,8 @@
 	left: -8px;
 }
 
+/* =================    media queries   ========================= */
+
 @media (max-width: 576px) {
 	.resume-pro-skills {
 		display: block;
