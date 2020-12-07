@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./assets/css/about.css">
 	<link rel="stylesheet" href="./assets/css/resume.css">
 	<link rel="stylesheet" href="./assets/css/blog.css">
+	<link rel="stylesheet" href="./assets/css/contact.css">
 	<script src="https://kit.fontawesome.com/3f81f9b1b7.js" crossorigin="anonymous"></script>
 	<title>Fabián Juárez</title>
 </head>
@@ -18,16 +19,16 @@
 		<!-- ======================   Nav menu  ========================================-->
 
 		<div class="nav-container">
-			<!-- <nav class="nav-menu" id="hide">
+			<nav class="nav-menu" id="hide">
 				<ul class="nav-list">
 					<li class="nav-item d-inline-block"><a href="#home" target="_self" class="nav-link link-selected">Home</a></li>
 					<li class="nav-item d-inline-block"><a href="#about" class="nav-link">About</a></li>
 					<li class="nav-item d-inline-block"><a href="#resume" class="nav-link">Resume</a></li>
-					<li class="nav-item d-inline-block"><a href="" class="nav-link">Portfolio</a></li>
-					<li class="nav-item d-inline-block"><a href="" class="nav-link">Blog</a></li>
-					<li class="nav-item d-inline-block"><a href="" class="nav-link">Contac</a></li>
+					<li class="nav-item d-inline-block"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+					<li class="nav-item d-inline-block"><a href="#blog" class="nav-link">Blog</a></li>
+					<li class="nav-item d-inline-block"><a href="#contact" class="nav-link">Contact</a></li>
 				</ul>
-			</nav> -->
+			</nav>
 			<div class="nav-toggle-icon" id="toggleId">
 				<span class="nav-toggle-styles nav-before-after closed" id="toggle-id"></span>
 				<span class="nav-toggle-styles nav-open"></span>
@@ -37,7 +38,7 @@
 
 		<!-- ======================   Home section  ========================================-->
 
-		<section class="home-class generic-section section-active default-bcolor-bradius padding-responsive d-none" id="home">
+		<section class="home-class generic-section section-active default-bcolor-bradius padding-responsive row section-active" id="home">
 			<div class="home-cont-img col-lg-6 p-relative p-15px default-bcolor-bradius">
 				<div class="p-relative">
 					<img src="./assets/img/home-profile.jpg" alt="profile image" class="home-img">
@@ -59,7 +60,7 @@
 
 		<!-- ======================   About section  ========================================-->
 		<!-- section-disactivate  about / resume / portfolio / blog / contact  -->
-		<section class="about-class generic-section default-bcolor-bradius padding-responsive d-none" id="about">
+		<section class="about-class generic-section default-bcolor-bradius padding-responsive row section-disactivate" id="about">
 			<h2 class="title-xl">ABOUT <span class="color-blue">ME</span></h2>
 			<div class="about-cont-info row default-bcolor-bradius">
 				<div class="about-personal-info col-lg-6 row col-md-12 col-sm-12">
@@ -235,7 +236,7 @@
 		
 		<!-- ======================   Resume section  ========================================-->
 
-		<section class="resume-class generic-section padding-responsive d-none" id="resume">
+		<section class="resume-class generic-section padding-responsive row section-disactivate" id="resume">
 			<h2 class="title-xl"><span class="color-blue">MY</span> RESUME</h2>
 			<div class="resume-cont-button-cv default-bcolor-bradius col-lg-12 col-md-12 col-sm-12">
 				<p class="button-animated resume-cv-buttom"><i class="fas fa-download p-relative"></i> <span class="p-relative">DOWNLOAD MY CV</span></p>
@@ -409,13 +410,13 @@
 
 		<!-- ======================   Portfolio section  ========================================-->
 
-		<section class="portfolio-class generic-section padding-responsive d-none" id="portfolio">
+		<section class="portfolio-class generic-section padding-responsive row section-disactivate" id="portfolio">
 			
 		</section>
 
 		<!-- ======================   Blog section  ========================================-->
 
-		<section class="blog-class generic-section padding-responsive d-none" id="blog">
+		<section class="blog-class generic-section padding-responsive row section-disactivate" id="blog">
 			<h2 class="title-xl">MY <span class="color-blue">BLOG</span></h2>			
 			<div class="blog-card col-lg-4 col-md-6 col-sm-12">
 				<div class="blog-cont-card default-bcolor-bradius">
@@ -505,9 +506,52 @@
 
 		<!-- ======================   Contact section  ========================================-->
 
-		<section class="contact-class generic-section padding-responsive " id="contact"></section>
+		<section class="contact-class generic-section padding-responsive row section-disactivate" id="contact">
+			<h2 class="title-xl">CONTACT <span class="color-blue">ME</span></h2>
+			<div class="contact-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="contact-card default-bcolor-bradius">
+					<span class="contact-icon"><i class="color-blue fas fa-rocket"></i></span>
+					<h4 class="subtitle-md">MY LOCATION:</h4>
+					<p class="text-standar color-blue-secundary">Puebla, Pue.</p>
+				</div>
+			</div>
+			<div class="contact-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="contact-card default-bcolor-bradius">
+					<span class="contact-icon"><i class="color-blue fas fa-phone"></i></span>
+					<h4 class="subtitle-md">PHONE NUMBER:</h4>
+					<p class="text-standar color-blue-secundary">+52 22 22 85 98 64</p>
+				</div>
+			</div>
+			<div class="contact-cont-card col-lg-4 col-md-6 col-sm-12">
+				<div class="contact-card default-bcolor-bradius">
+					<span class="contact-icon"><i class="color-blue fas fa-envelope"></i></span>
+					<h4 class="subtitle-md">EMAIL ADDRESS:</h4>
+					<p class="text-standar color-blue-secundary">demomail@gmail.com</p>
+				</div>
+			</div>
+			<div class="contact-cont-message col-lg-6 col-md-12 col-sm-12">
+				<div class="contact-message default-bcolor-bradius">
+					<form action="" class="contact-form row">
+						<input class="contact-input contact-name col-lg-6 col-md-6 col-sm-12" type="text" name="" id="" placeholder="Name">
+						<input class="contact-input contact-email col-lg-5 col-md-5 col-sm-12" type="email" name="" id="" placeholder="Email*">
+						<input class="contact-input contact-subject col-lg-12 col-md-12 col-sm-12" type="text" name="" id="" placeholder="Subject*">
+						<textarea class="contact-input contact-message col-lg-12 col-md-12 col-sm-12" name="" id="" placeholder="Message*"></textarea>
+						<p class="contact-submit button-animated col-lg-12 col-md-12 col-sm-12"><span class="contact-span-submit p-relative">SEND MESSAGE</span></p>
+					</form>
+					<a href="https://www.facebook.com/" target="_blank" class="contact-social-media"><i class="color-blue fab fa-facebook-f"></i></a>
+					<a href="https://twitter.com/?lang=es" target="_blank" class="contact-social-media"><i class="color-blue fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/" target="_blank" class="contact-social-media"><i class="color-blue fab fa-linkedin-in"></i></a>
+					<a href="https://www.instagram.com/" target="_blank" class="contact-social-media"><i class="color-blue fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="contact-cont-map col-lg-6 col-md-12 col-sm-12">
+				<div class="contact-map default-bcolor-bradius">
+					<iframe class="contact-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241378.06889469578!2d-98.33305416658573!3d19.040318956665452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1607309175207!5m2!1ses-419!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+			</div>
+		</section>
 	</div>
-	<!-- <script src="./assets/js/letter_animation.js"></script> -->
-	<!-- <script src="./assets/js/nav_animation.js"></script> -->
+	<script src="./assets/js/letter_animation.js"></script>
+	<script src="./assets/js/nav_animation.js"></script>
 </body>
 </html>

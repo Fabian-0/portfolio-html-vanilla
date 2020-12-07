@@ -1,0 +1,91 @@
+.contact-class {
+	justify-content: center;	
+}
+
+.contact-cont-card, .contact-cont-message, .contact-cont-message, .contact-map, .contact-cont-map {
+	padding: 20px;
+}
+
+.contact-message {
+	padding: 30px;
+}
+
+.contact-card {
+	padding: 25px;
+	text-align: center;
+}
+
+.contact-icon {
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	background-color: rgba(41, 105, 207, 0.1);
+	padding: 15px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	text-align: center;
+	line-height: 3.2rem;
+	font-size: 1.5rem;
+}
+
+.contact-form {
+	justify-content: space-between;	
+}
+
+.contact-input::placeholder {
+	font-size: 1.05rem;
+	color: #94A2C7;
+}
+
+.contact-input:focus {
+	outline: transparent;
+	border-bottom: 1px solid #4c84ff;
+}
+
+.contact-input {
+	font-size: 1.1rem;
+	padding: 15px;
+	padding-left: 0;
+	border: 1px transparent;
+	background-color: transparent;
+	border-bottom: 1px solid #94a2c73b;
+	margin-bottom: 20px;
+}
+
+.contact-message {
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 70px;
+}
+
+.contact-submit {
+	margin: 15px 0;
+	padding: 10px;
+	text-align: center;
+}
+
+.contact-span-submit {
+	z-index: 300;
+}
+
+.contact-social-media {
+	display: inline-block;
+	padding: 1rem;
+	margin: 15px 15px 0 0;
+	background-color: rgba(41, 105, 207, 0.1);
+	border-radius: 3px;
+	transition: all 1s;
+}
+
+.contact-social-media:hover {
+	background-color: #4c84ff;
+}
+
+.contact-social-media:hover i {
+	color: #fff;
+}
+
+.contact-map, .contact-map-iframe {
+	width: 100%;
+	height: 100%;
+}
