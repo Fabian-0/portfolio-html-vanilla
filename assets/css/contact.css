@@ -52,12 +52,8 @@
 	margin-bottom: 20px;
 }
 
-.contact-message {
-	overflow: hidden;
-}
-
 .contact-message-text {
-		max-width: 100%;
+	max-width: 100%;
 	min-width: 100%;
 	min-height: 70px;
 }
@@ -92,4 +88,10 @@
 .contact-map, .contact-map-iframe {
 	width: 100%;
 	height: 100%;
+}
+
+@media (max-width: 567px) {
+	.contact-input {
+		width: 100%;
+	}
 }
