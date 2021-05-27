@@ -4,7 +4,7 @@
 <li>HTML</li><li>CSS</li><li>Javascript</li></ul>
 <p>This project born while I saw designs that I seemed very interesting 🧐.<br>you can see this project deploy with Netlify following the next link:</p>
 
-<code>link</code>: <a href="https://portfolio-fabian.netlify.app/">https://portfolio-fabian.netlify.app/</a>
+<code>link</code>: <p>https://portfolio-fabian.netlify.app/</p>
 
 <p>or you can download/clon it and run it with any web server.</p>
 </div>
