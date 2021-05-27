@@ -91,7 +91,7 @@
 	font-size: 0.85rem;
 }
 
-/* =================    Rresponsive     ========================= */
+/* ===================          Media    Queries           ====================== */
 
 @media (max-width: 777px) {
 	.about-cont-info {

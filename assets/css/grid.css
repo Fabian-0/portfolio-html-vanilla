@@ -12,10 +12,6 @@
   flex-wrap: wrap;
 }
 
-/* [class*="col-"] {
-  padding: 10px;
-} */
-
 /* ============  Info  ============ */
 
 /* Large divaces >= 992px ( col-lg-x ) x = [ 1, 2, 3, ..., 12 ] */
@@ -24,6 +20,8 @@
 
 
 /*=============  Grid  ==============*/
+
+/*=============  Small screens  ============*/
 
 @media (min-width: 576px) {
   .col-sm-1 {
@@ -64,6 +62,8 @@
   }
 }
 
+/*=============  Middle screens  ============*/
+
 @media (min-width: 768px) {
   .col-md-1 {
     width: 8.33%;
@@ -103,6 +103,8 @@
   }
 }
 
+/*=============  Large screens  ============*/
+
 @media (min-width: 992px) {
   .col-lg-1 {
     width: 8.33%;
@@ -141,6 +143,8 @@
     width: 100%;
   }
 }
+
+/*=============  Extra Small screens  ============*/
 
 @media (max-width: 575px) {
   .row {

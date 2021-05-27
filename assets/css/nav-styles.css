@@ -1,3 +1,5 @@
+/* ===================          Navbar styles           ====================== */
+
 .nav-container {
 	position: fixed;
 	top: 5%;
@@ -86,6 +88,8 @@
 .nav-open-inverse {
 	transform: rotate(-45deg);
 }
+
+/* ===================          Media Queries           ====================== */
 
 @media (max-width: 991px) {
 	.nav-container {

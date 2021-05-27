@@ -1,4 +1,4 @@
-/* ==============    Helpers     ==================*/
+/* ==============    Reset Styles     ==================*/
 
 * {
 	margin: 0;
@@ -151,10 +151,10 @@ body {
 
 @keyframes progres-bar-animation{
 	from {
-		background-position-x: 160px;
+		background-position-x: 0px;
 	}
 	to {
-		background-position-x: 0px;
+		background-position-x: 160px;
 	}
 }
 
@@ -253,6 +253,7 @@ body {
 
 .home-icon-portfolio {
 	z-index: 300;
+	text-decoration: none;
 }
 
 .home-link {

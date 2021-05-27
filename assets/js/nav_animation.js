@@ -22,7 +22,6 @@ function classToggle(){
 	for(let i = 0; i < navLinks.length; i++){
 		navLinks[i].addEventListener('click', (e)=>{
 
-			let buttonPortfolio;
 			let linkId = navLinks[i].textContent.toLowerCase();
 			let sectionId = document.getElementById(linkId);
 			if(sectionVisibleArea == undefined && linkId == 'home') {
